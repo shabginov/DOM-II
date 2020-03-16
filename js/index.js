@@ -9,3 +9,11 @@ function removeLink(event) {
 for (let i = 0; i < links.length; i++) {
   links[i].addEventListener('mouseover', removeLink);
 }
+
+
+// Keydown
+const body = document.querySelector('body');
+body.addEventListener('keydown', (event) => {
+  const char = event.which;
+  console.log(String.fromCharCode(char));
+})
